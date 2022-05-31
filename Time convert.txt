@@ -1,0 +1,20 @@
+ java.time.Duration duration = java.time.Duration.ofMinutes(67);
+LocalTime time = LocalTime.of((int) duration.toHours(), (int) duration.toMinutes() % 60);
+System.out.println("time = " + time); //01:07
+
+
+
+
+    {
+        // create a LocalTime object
+        LocalTime time
+            = LocalTime.parse("19:34:50.63");
+  
+        // get Minute field using getMinute()
+        int Minute = time.getMinute();
+  
+        // print result
+        System.out.println("Minute Field: "
+                           + Minute);
+    }
+}
